@@ -21,7 +21,7 @@ public class GenericFunctions<T> {
         System.out.println();
     }
 
-    public void printSimpleGenerics(ArrayList<T> list) {
+    public void printSimpleGenerics(ArrayList<?> list) {
         for(Object element : list) {
             System.out.print(element + " ");
         }

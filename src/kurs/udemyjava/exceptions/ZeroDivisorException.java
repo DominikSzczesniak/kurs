@@ -2,10 +2,10 @@ package kurs.udemyjava.exceptions;
 
 public class ZeroDivisorException extends Exception{
 
-    ZeroDivisorException(Exception e){
+    public ZeroDivisorException(Exception e){
         super(e);
     }
-    ZeroDivisorException(String message){
+    public ZeroDivisorException(String message){
         super(message);
     }
 }

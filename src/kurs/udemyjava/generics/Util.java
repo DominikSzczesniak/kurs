@@ -3,7 +3,7 @@ package kurs.udemyjava.generics;
 public class Util {
 
     public static <T> void displayToString(T typeData){
-        System.out.println(typeData.toString());
+        System.out.println(typeData);
     }
 
 }
