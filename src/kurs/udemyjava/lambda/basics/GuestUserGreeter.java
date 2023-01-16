@@ -1,4 +1,4 @@
-package kurs.udemyjava.lambda;
+package kurs.udemyjava.lambda.basics;
 
 public class GuestUserGreeter implements Greeter{
     @Override
