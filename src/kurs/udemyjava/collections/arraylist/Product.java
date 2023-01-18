@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Product {
     private String name;
     private double price;
-    private String description;
+    private String brand;
 
-    public Product(String name, double price, String description) {
+    public Product(String name, double price, String brand) {
         this.name = name;
         this.price = price;
-        this.description = description;
+        this.brand = brand;
     }
 
     public String getName() {
@@ -29,12 +29,12 @@ public class Product {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     @Override
@@ -42,12 +42,12 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Double.compare(product.price, price) == 0 && Objects.equals(name, product.name) && Objects.equals(description, product.description);
+        return Double.compare(product.price, price) == 0 && Objects.equals(name, product.name) && Objects.equals(brand, product.brand);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, price, description);
+        return Objects.hash(name, price, brand);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Product {
         return "Product{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
-                ", description='" + description + '\'' +
+                ", description='" + brand + '\'' +
                 '}';
     }
 }

@@ -3,6 +3,8 @@ package kurs.udemyjava.lambda.bifunction;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class LambdaBiFunctionApp {
 
@@ -20,5 +22,14 @@ public class LambdaBiFunctionApp {
         };
 
         System.out.println(generateList.apply(10, 3));
+
+        System.out.println(Stream.of("Dominik", "Michał", "Magda")
+                .filter(name -> {
+                    System.out.println("Starts with M");
+                    return name.startsWith("M");
+                })
+                .collect(Collectors.toList()));
+
+
     }
 }
